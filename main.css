@@ -2,6 +2,15 @@
   background: lightblue;
   width: 400px;
   height: 200px;
+  border: none;
+
+}
+#box1 h3 {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  font-size: 1em;
+  font-weight: normal;
 }
 button {
   width: 100px;
