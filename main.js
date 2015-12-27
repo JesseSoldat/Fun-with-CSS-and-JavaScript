@@ -117,7 +117,7 @@ var btn6 = document.getElementById('btn6');
 
 function slideBox() {
   box3.style.transition = 'all 3.0s linear 0s';
-  box3.style.height = '600px';
+  box3.style.height = '650px';
   btn5.setAttribute('disabled', true);
   btn6.style.opacity = 1;
   setTimeout(function() {
@@ -132,6 +132,34 @@ function shrinkBox() {
 
    setTimeout(function() {
     btn5.removeAttribute('disabled');
+  },3000);
+}
+
+//Fourth Box--------------------------------------
+
+var box4 = document.getElementById('box4');
+var snake = document.getElementById('snake');
+var btn7 = document.getElementById('btn7'); 
+var btn8 = document.getElementById('btn8');
+
+function stretchImg() { 
+  btn7.setAttribute('disabled', true);
+  box4.style.transition = 'all 3.0s linear 0s';
+  box4.style.width = '1000px'
+  btn8.style.opacity = 1;
+
+  setTimeout(function(){
+    btn8.removeAttribute('disabled');
+  },3000);
+}
+function shrinkImg() {
+  box4.style.transition = 'all 3.0s linear 0s';
+  box4.style.width = '0px'
+
+  btn8.setAttribute('disabled', true);
+
+   setTimeout(function(){
+    btn7.removeAttribute('disabled');
   },3000);
 }
 

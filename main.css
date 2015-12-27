@@ -10,6 +10,7 @@ button {
 #leftColumn {
   float: left;
   width: 49%;
+  height: 700px;
   border: 1px solid #9A9A9A;
 
 }
@@ -97,6 +98,7 @@ button {
 #rightColumn {
   float: right;
   width: 49%;
+  height: 700px;
   border: 1px solid #9A9A9A;
 }
 /*Box 3*/
@@ -115,4 +117,21 @@ button {
 }
 #btn6 {
   opacity: 0;
+}
+/*Box 4*/
+/*---------------------------------*/
+#btn7 {
+  clear: both;
+}
+#btn8 {
+  clear: both;
+  opacity: 0;
+}
+#box4 {
+  height: 300px;
+  width: 0;
+  overflow: hidden;
+}
+#snake {
+  width: 100%;
 }
