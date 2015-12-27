@@ -1,10 +1,11 @@
- var elem = document.getElementById('box1');
- var btn = document.getElementById('btn');
- var btn2 = document.getElementById('btn2');
- var text = document.getElementById('firstText');
- var leprechaun = document.getElementById('leprechaun');
- var rainbow = document.getElementById('rainbow');
- var gold = document.getElementById('gold');
+//First Box
+var elem = document.getElementById('box1');
+var btn = document.getElementById('btn');
+var btn2 = document.getElementById('btn2');
+var text = document.getElementById('firstText');
+var leprechaun = document.getElementById('leprechaun');
+var rainbow = document.getElementById('rainbow');
+var gold = document.getElementById('gold');
 
 function changeStyle () {
  btn.setAttribute('disabled', 'true');
@@ -61,13 +62,13 @@ function changeStyle2() {
 }
 
 var rainbowAppear = function () {
-rainbow.style.transition = 'opacity 3.0 linear 0s';
-rainbow.style.opacity = 1.0;
+  rainbow.style.transition = 'opacity 3.0 linear 0s';
+  rainbow.style.opacity = 1.0;
 };
 
 var rainbowFade = function () {
-rainbow.style.transition = 'opacity 3.0 linear 0s';
-rainbow.style.opacity = 0.0;
+  rainbow.style.transition = 'opacity 3.0 linear 0s';
+  rainbow.style.opacity = 0.0;
 };
 
 var second = function() {
@@ -81,4 +82,34 @@ var second = function() {
   gold.style.transition = 'all 3.0s linear 0s';
   gold.style.opacity = 1.0; 
 }
+//Second Box
+var tiger = document.getElementById('tiger');
+var bars = document.getElementById('bars');
+var btn3 = document.getElementById('btn3');
+var btn43 = document.getElementById('btn4');
+
+
+function toggleTiger() {
+  tiger.style.transition = 'all 3.0s linear 0s';
+  tiger.style.opacity = 1.0;
+  btn3.setAttribute('disabled', true);
+  btn4.style.opacity = 1.0;
+
+  setTimeout(function(){
+    btn4.removeAttribute('disabled');
+  },2000);
+
+}
+function toggleBars() {
+  bars.style.transition = 'all 2.0s linear 0s';
+  bars.style.opacity = 1.0;
+  btn4.setAttribute('disabled', true);
+}
+
+
+
+
+
+
+
 
