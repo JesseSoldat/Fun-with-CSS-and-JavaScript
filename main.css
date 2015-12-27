@@ -7,7 +7,12 @@ button {
   border-radius: 3px;
   margin: 1%;
 }
+#leftColumn {
+  float: left;
+  width: 49%;
+  border: 1px solid #9A9A9A;
 
+}
 /*Box 1*/
 #box1 {
   background: lightblue;
@@ -89,4 +94,25 @@ button {
 #btn4 {
   opacity: 0;
 }
+#rightColumn {
+  float: right;
+  width: 49%;
+  border: 1px solid #9A9A9A;
+}
+/*Box 3*/
+/*---------------------------------*/
+#box3 {
+  height: 0;
+  overflow: hidden;
+}
+#girrafe {
+  height: 100%;
+  max-width: 100%;
 
+}
+#btn5 {
+
+}
+#btn6 {
+  opacity: 0;
+}

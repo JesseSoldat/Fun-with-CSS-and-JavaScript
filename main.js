@@ -1,4 +1,4 @@
-//First Box
+//First Box--------------------------------------
 var elem = document.getElementById('box1');
 var btn = document.getElementById('btn');
 var btn2 = document.getElementById('btn2');
@@ -82,7 +82,9 @@ var second = function() {
   gold.style.transition = 'all 3.0s linear 0s';
   gold.style.opacity = 1.0; 
 }
-//Second Box
+
+//Second Box--------------------------------------
+
 var tiger = document.getElementById('tiger');
 var bars = document.getElementById('bars');
 var btn3 = document.getElementById('btn3');
@@ -105,6 +107,34 @@ function toggleBars() {
   bars.style.opacity = 1.0;
   btn4.setAttribute('disabled', true);
 }
+
+//Third Box--------------------------------------
+
+var box3 = document.getElementById('box3');
+var girrafe = document.getElementById('girrafe');
+var btn5 = document.getElementById('btn5');
+var btn6 = document.getElementById('btn6');
+
+function slideBox() {
+  box3.style.transition = 'all 3.0s linear 0s';
+  box3.style.height = '600px';
+  btn5.setAttribute('disabled', true);
+  btn6.style.opacity = 1;
+  setTimeout(function() {
+    btn6.removeAttribute('disabled');
+  },3000);
+  
+}
+function shrinkBox() {
+  btn6.setAttribute('disabled', true)
+  box3.style.transition = 'all 3.0s linear 0s';
+  box3.style.height = '0';
+
+   setTimeout(function() {
+    btn5.removeAttribute('disabled');
+  },3000);
+}
+
 
 
 
