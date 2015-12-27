@@ -20,3 +20,9 @@ button {
   border-radius: 3px;
   margin: 1%;
 }
+#btn {
+  opacity: 1;
+}
+#btn2 {
+  opacity: 0;
+}
