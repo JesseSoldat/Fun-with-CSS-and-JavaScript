@@ -10,7 +10,7 @@ button {
 #leftColumn {
   float: left;
   width: 49%;
-  height: 700px;
+  height: 800px;
   border: 1px solid #9A9A9A;
 
 }
@@ -98,7 +98,7 @@ button {
 #rightColumn {
   float: right;
   width: 49%;
-  height: 700px;
+  height: 800px;
   border: 1px solid #9A9A9A;
 }
 /*Box 3*/

@@ -14,7 +14,7 @@ function changeStyle () {
  text.innerHTML = "Now you've done it!";
  elem.style.background = 'red';
  elem.style.border = '5px solid black';
- elem.style.width = '600px';
+ elem.style.width = '550px';
  elem.style.height = '400px';
 
  leprechaun.style.transition = 'all 3.0 linear 0s';
@@ -117,7 +117,7 @@ var btn6 = document.getElementById('btn6');
 
 function slideBox() {
   box3.style.transition = 'all 3.0s linear 0s';
-  box3.style.height = '650px';
+  box3.style.height = '750px';
   btn5.setAttribute('disabled', true);
   btn6.style.opacity = 1;
   setTimeout(function() {
