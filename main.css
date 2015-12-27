@@ -135,3 +135,7 @@ button {
 #snake {
   width: 100%;
 }
+
+#rainbow5 {
+  opacity: 0;
+}

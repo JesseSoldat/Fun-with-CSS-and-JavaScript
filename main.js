@@ -7,6 +7,33 @@ var leprechaun = document.getElementById('leprechaun');
 var rainbow = document.getElementById('rainbow');
 var gold = document.getElementById('gold');
 
+var increaseOpacity = function(element) {
+  var num1 = 0;
+  var increase = setInterval(function(){
+    num1 = num1 + .1;
+    element.style.opacity = num1;
+    if(num1 >= 1) {
+      clearInterval(increase);
+      element.style.opacity = 1;
+      return
+    }
+  },500);  
+};
+
+
+var decreaseOpacity = function(element) {
+  var num2 = 1;
+  var decrease = setInterval(function() {
+    num2 = num2 - .1;
+    element.style.opacity = num2;
+    if(num2 <= 0) {
+      element.style.opacity = 0;
+      clearInterval(decrease);
+      return
+    }
+  },300);
+};
+
 function changeStyle () {
  btn.setAttribute('disabled', 'true');
 
@@ -17,17 +44,18 @@ function changeStyle () {
  elem.style.width = '550px';
  elem.style.height = '400px';
 
- leprechaun.style.transition = 'all 3.0 linear 0s';
- leprechaun.style.opacity = 0.0;
+ decreaseOpacity(leprechaun);
+ 
  
  elem.style.fontSize = '3em';
  elem.style.fontWeight = 'bolder';
 
  btn2.style.opacity = '1';
 
- setTimeout( function() {
-  rainbowAppear();
+ increaseOpacity(rainbow);
 
+ setTimeout( function() {
+  
   btn2.removeAttribute('disabled');
 
  },3000);
@@ -49,10 +77,6 @@ function changeStyle2() {
     elem2.style.border = '2px dashed purple';
     elem2.style.width = '100px';
     elem2.style.height = '50px';
-
-   setTimeout(function(){
-      rainbowFade();
-    },4000);
     
     setTimeout(function(){
       second();
@@ -61,16 +85,6 @@ function changeStyle2() {
   first();
 }
 
-var rainbowAppear = function () {
-  rainbow.style.transition = 'opacity 3.0 linear 0s';
-  rainbow.style.opacity = 1.0;
-};
-
-var rainbowFade = function () {
-  rainbow.style.transition = 'opacity 3.0 linear 0s';
-  rainbow.style.opacity = 0.0;
-};
-
 var second = function() {
   var secondText = document.getElementById('firstText');
   secondText.innerHTML = "I've shrunk!"
@@ -78,9 +92,10 @@ var second = function() {
   secondText.style.top = '20px';
   secondText.style.left = 0;
   secondText.style.fontFamily = 'cursive';
-    
-  gold.style.transition = 'all 3.0s linear 0s';
-  gold.style.opacity = 1.0; 
+  
+  decreaseOpacity(rainbow);
+  
+  increaseOpacity(gold);
 }
 
 //Second Box--------------------------------------
@@ -88,7 +103,7 @@ var second = function() {
 var tiger = document.getElementById('tiger');
 var bars = document.getElementById('bars');
 var btn3 = document.getElementById('btn3');
-var btn43 = document.getElementById('btn4');
+var btn4 = document.getElementById('btn4');
 
 
 function toggleTiger() {
