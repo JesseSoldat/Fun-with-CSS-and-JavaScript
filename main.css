@@ -136,6 +136,24 @@ button {
   width: 100%;
 }
 
-#rainbow5 {
+/*Box 5*/
+/*---------------------------------*/
+#btn9 {
+  clear: both;
+}
+#btn10 {
+  clear: both;
   opacity: 0;
+}
+#box5 {
+  position: relative;
+  background: lightblue;
+  
+}
+
+#arm {
+  position: absolute;
+  top: 50px;
+  right: -1500px;
+  width: 80%;
 }

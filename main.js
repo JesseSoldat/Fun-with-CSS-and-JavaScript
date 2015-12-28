@@ -20,7 +20,6 @@ var increaseOpacity = function(element) {
   },500);  
 };
 
-
 var decreaseOpacity = function(element) {
   var num2 = 1;
   var decrease = setInterval(function() {
@@ -177,6 +176,34 @@ function shrinkImg() {
     btn7.removeAttribute('disabled');
   },3000);
 }
+
+//Fifth Box--------------------------------------
+var arm = document.getElementById('arm');
+var btn9 = document.getElementById('btn9'); 
+var btn10 = document.getElementById('btn10');
+
+
+function slideIn() {
+  arm.style.transition = 'all 3.0s linear 0s';
+  arm.style.right = '-100px';
+  btn10.style.opacity = 1;
+
+  btn9.setAttribute('disabled', true);
+  setTimeout(function(){
+    btn10.removeAttribute('disabled');
+  },3000);
+}
+function slideOut() {
+  arm.style.transition = 'all 3.0s linear 0s';
+  arm.style.right = '-1500px';
+
+  btn10.setAttribute('disabled', true);
+
+   setTimeout(function(){
+    btn9.removeAttribute('disabled');
+  },3000);
+}
+
 
 
 
